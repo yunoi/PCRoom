@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="225.0" layoutY="24.0" text="새상품 등록" />
+      <Label layoutX="20.0" layoutY="69.0" text="상품코드" />
+      <TextField fx:id="txtItemCode" layoutX="95.0" layoutY="64.0" prefHeight="29.0" prefWidth="127.0" />
+      <TextField fx:id="txtItemCategory" layoutX="95.0" layoutY="102.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="107.0" text="상품분류" />
+      <Label layoutX="20.0" layoutY="147.0" text="상품명" />
+      <TextField fx:id="txtItemName" layoutX="95.0" layoutY="142.0" prefHeight="29.0" prefWidth="127.0" />
+      <TextField fx:id="txtItemPrice" layoutX="95.0" layoutY="181.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="186.0" text="가격" />
+      <Label layoutX="20.0" layoutY="226.0" text="창고재고" />
+      <TextField fx:id="txtItemStockGarage" layoutX="95.0" layoutY="221.0" prefHeight="29.0" prefWidth="127.0" />
+      <Button fx:id="btnOk" layoutX="134.0" layoutY="357.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnExit" layoutX="315.0" layoutY="357.0" mnemonicParsing="false" text="취소" />
+      <TextField fx:id="txtItemStockDisplay" layoutX="95.0" layoutY="261.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="266.0" text="진열재고" />
+      <Label layoutX="20.0" layoutY="306.0" text="총 재고" />
+      <TextField fx:id="txtItemTotalStock" layoutX="95.0" layoutY="301.0" prefHeight="29.0" prefWidth="127.0" />
+      <Button fx:id="btnCal" layoutX="208.0" layoutY="357.0" mnemonicParsing="false" text="재고 계산" />
+      <ImageView fx:id="imgViewItemImg" fitHeight="100.0" fitWidth="100.0" layoutX="290.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="300.0" layoutY="69.0" text="상품 이미지" />
+      <Button fx:id="btnImg" layoutX="293.0" layoutY="212.0" mnemonicParsing="false" text="이미지등록" />
+   </children>
+</AnchorPane>

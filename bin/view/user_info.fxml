@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="428.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="23.0" layoutY="44.0" text="PC 번호" />
+      <Label fx:id="lbSeatNo" layoutX="106.0" layoutY="26.0" text="No.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="90.0" text="회원ID" />
+      <Label fx:id="lbUserId" layoutX="102.0" layoutY="90.0" text="xxx" />
+      <Label layoutX="23.0" layoutY="128.0" text="이름" />
+      <Label fx:id="lbUserName" layoutX="102.0" layoutY="128.0" text="xxx" />
+      <Label layoutX="23.0" layoutY="174.0" text="이용중인 요금제" />
+      <Label fx:id="lbPrepaidMoney" layoutX="154.0" layoutY="174.0" text="0시간 0원" />
+      <Label layoutX="23.0" layoutY="225.0" text="시작 시간" />
+      <Label layoutX="23.0" layoutY="260.0" text="사용 시간" />
+      <Label fx:id="lbStartTime" layoutX="154.0" layoutY="225.0" text="00 : 00" />
+      <Label fx:id="lbUsedTime" layoutX="156.0" layoutY="260.0" text="00 : 00" />
+      <Label layoutX="21.0" layoutY="334.0" text="현재 지불된 금액" />
+      <Label fx:id="lbPaidMoney" layoutX="169.0" layoutY="334.0" text="0원" />
+      <Button fx:id="btnCharge" layoutX="48.0" layoutY="373.0" mnemonicParsing="false" text="요금충전" />
+      <Button fx:id="btnOk" layoutX="144.0" layoutY="373.0" mnemonicParsing="false" text="확인" />
+      <Label layoutX="24.0" layoutY="295.0" text="남은 시간" />
+      <Label fx:id="lbRemainTime" layoutX="154.0" layoutY="295.0" text="00 : 00" />
+   </children>
+   <padding>
+      <Insets right="10.0" />
+   </padding>
+</AnchorPane>

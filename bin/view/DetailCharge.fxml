@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailChargeController">
+   <children>
+      <Label layoutX="98.0" layoutY="36.0" text="상세요금">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="250.0" text="원" />
+      <Label layoutX="24.0" layoutY="346.0" text="총요금" />
+      <Label layoutX="24.0" layoutY="212.0" text="선불이용요금" />
+      <Label layoutX="24.0" layoutY="125.0" text="ID" />
+      <Label layoutX="23.0" layoutY="85.0" text="이름" />
+      <Button fx:id="btnDetailOk" layoutX="166.0" layoutY="403.0" mnemonicParsing="false" text="확인" />
+      <Label fx:id="lbDetailName" layoutX="135.0" layoutY="85.0" text="name" />
+      <Label fx:id="lbDetailId" layoutX="135.0" layoutY="125.0" text="ID" />
+      <Label fx:id="lbDetailItemOrdered" layoutX="145.0" layoutY="212.0" text="2000" />
+      <Label layoutX="219.0" layoutY="212.0" text="원" />
+      <Label fx:id="lbTotalDetailMoney" layoutX="145.0" layoutY="250.0" text="4000" />
+      <Label layoutX="24.0" layoutY="250.0" text="상품주문요금" />
+      <Label fx:id="lbTotalDetailMoney1" layoutX="147.0" layoutY="346.0" text="6000" />
+      <Label layoutX="221.0" layoutY="346.0" text="원" />
+   </children>
+</AnchorPane>

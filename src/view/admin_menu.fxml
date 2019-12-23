@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane prefHeight="599.0" prefWidth="986.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminMenuController">
+   <tabs>
+      <Tab text="직원관리">
+         <content>
+            <AnchorPane fx:id="ancAdminInit" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtAdminSearch" layoutX="696.0" layoutY="488.0" promptText="직원이름검색" />
+                  <Button fx:id="btnAdminSearch" layoutX="881.0" layoutY="488.0" mnemonicParsing="false" text="직원검색" />
+                  <Button fx:id="btnAdminDelete" layoutX="269.0" layoutY="488.0" mnemonicParsing="false" text="직원삭제" />
+                  <Button fx:id="btnAdminInfoEdit" layoutX="127.0" layoutY="488.0" mnemonicParsing="false" text="직원정보수정" />
+                  <Button fx:id="btnAdminAdd" layoutX="19.0" layoutY="488.0" mnemonicParsing="false" text="직원추가" />
+                  <Label layoutX="14.0" layoutY="14.0" text="전체직원조회" />
+                  <TableView fx:id="tableViewAdminDB" layoutX="14.0" layoutY="45.0" prefHeight="416.0" prefWidth="958.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="시설관리">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableViewEquipDB" layoutX="14.0" layoutY="40.0" prefHeight="314.0" prefWidth="959.0" />
+                  <Label layoutX="14.0" layoutY="14.0" text="전체시설조회" />
+                  <Label layoutX="46.0" layoutY="413.0" text="모니터" />
+                  <Label fx:id="lbMonitorCount" layoutX="108.0" layoutY="413.0" text="00" />
+                  <Label layoutX="138.0" layoutY="413.0" text="개" />
+                  <Label layoutX="275.0" layoutY="413.0" text="개" />
+                  <Label fx:id="lbComCount" layoutX="245.0" layoutY="413.0" text="00" />
+                  <Label layoutX="183.0" layoutY="413.0" text="본체" />
+                  <Label layoutX="417.0" layoutY="413.0" text="개" />
+                  <Label fx:id="lbKeyboardCount" layoutX="387.0" layoutY="413.0" text="00" />
+                  <Label layoutX="325.0" layoutY="413.0" text="키보드" />
+                  <TextField fx:id="txtEquipSearch" layoutX="691.0" layoutY="364.0" promptText="장비명검색" />
+                  <Button fx:id="btnEquipSearch" layoutX="878.0" layoutY="364.0" mnemonicParsing="false" text="시설검색" />
+                  <Label layoutX="40.0" layoutY="369.0" text="설비분류별 총 개수" />
+                  <Label layoutX="325.0" layoutY="451.0" text="마우스" />
+                  <Label fx:id="lbMouseCount" layoutX="387.0" layoutY="451.0" text="00" />
+                  <Label layoutX="417.0" layoutY="451.0" text="개" />
+                  <Label layoutX="46.0" layoutY="451.0" text="스피커" />
+                  <Label fx:id="lbSpeakerCount" layoutX="108.0" layoutY="451.0" text="00" />
+                  <Label layoutX="138.0" layoutY="451.0" text="개" />
+                  <Label layoutX="275.0" layoutY="451.0" text="개" />
+                  <Label fx:id="lbHeadsetCount" layoutX="245.0" layoutY="451.0" text="00" />
+                  <Label layoutX="183.0" layoutY="451.0" text="헤드셋" />
+                  <Button fx:id="btnEquipAdd" layoutX="344.0" layoutY="499.0" mnemonicParsing="false" text="장비 등록" />
+                  <Button fx:id="btnEquipEdit" layoutX="462.0" layoutY="499.0" mnemonicParsing="false" text="장비정보수정" />
+                  <Button fx:id="btnEquipDelete" layoutX="606.0" layoutY="499.0" mnemonicParsing="false" text="장비 삭제" />
+                  <Button fx:id="btnRefresh" layoutX="178.0" layoutY="364.0" mnemonicParsing="false" text="새로고침" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="재고관리">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="전체 재고 조회" />
+                  <TableView fx:id="tableViewItemDB" layoutX="14.0" layoutY="47.0" prefHeight="280.0" prefWidth="957.0" />
+                  <Button fx:id="btnItemSearch" layoutX="879.0" layoutY="9.0" mnemonicParsing="false" text="상품찾기" />
+                  <TextField fx:id="txtItemSearch" layoutX="698.0" layoutY="9.0" promptText="상품명 검색" />
+                  <Label layoutX="321.0" layoutY="350.0" text="상품코드" />
+                  <TextField fx:id="txtItemCode" layoutX="407.0" layoutY="345.0" prefHeight="29.0" prefWidth="72.0" />
+                  <TextField fx:id="txtImg" layoutX="42.0" layoutY="507.0" prefHeight="29.0" prefWidth="159.0" />
+                  <Label layoutX="698.0" layoutY="350.0" text="상품명" />
+                  <TextField fx:id="txtItemName" layoutX="764.0" layoutY="345.0" prefHeight="29.0" prefWidth="114.0" />
+                  <Label layoutX="42.0" layoutY="350.0" text="이미지" />
+                  <TextField fx:id="txtItemCategory" layoutX="566.0" layoutY="345.0" prefHeight="29.0" prefWidth="114.0" />
+                  <Label layoutX="493.0" layoutY="350.0" text="상품분류" />
+                  <Label layoutX="474.0" layoutY="414.0" text="창고재고" />
+                  <TextField fx:id="txtItemStockGarage" layoutX="548.0" layoutY="409.0" prefHeight="29.0" prefWidth="55.0" />
+                  <Label layoutX="623.0" layoutY="414.0" text="진열재고" />
+                  <TextField fx:id="txtItemStockDisplay" layoutX="704.0" layoutY="409.0" prefHeight="29.0" prefWidth="55.0" />
+                  <Label layoutX="781.0" layoutY="414.0" text="총재고" />
+                  <TextField fx:id="txtItemTotalStock" layoutX="832.0" layoutY="409.0" prefHeight="29.0" prefWidth="47.0" />
+                  <Button fx:id="btnItemEdit" layoutX="781.0" layoutY="505.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="87.0" text="수정완료" />
+                  <Button fx:id="btnNewItemAdd" layoutX="393.0" layoutY="507.0" mnemonicParsing="false" text="새상품 추가" />
+                  <Button fx:id="btnItemDelete" layoutX="548.0" layoutY="507.0" mnemonicParsing="false" text="상품 삭제" />
+                  <Button fx:id="btnCal" layoutX="891.0" layoutY="409.0" mnemonicParsing="false" text="재고계산" />
+                  <Label layoutX="321.0" layoutY="414.0" text="가격" />
+                  <TextField fx:id="txtItemPrice" layoutX="378.0" layoutY="409.0" prefHeight="29.0" prefWidth="79.0" />
+                  <Button fx:id="btnImg" layoutX="219.0" layoutY="507.0" mnemonicParsing="false" text="..." />
+                  <Button fx:id="btnInit" layoutX="667.0" layoutY="507.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="86.0" text="초기화" />
+                  <ImageView fx:id="imgItemImg" fitHeight="100.0" fitWidth="100.0" layoutX="72.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

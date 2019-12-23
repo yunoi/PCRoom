@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="320.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+	<children>
+		<Label layoutX="81.0" layoutY="32.0" text="외유내강 PC방" textAlignment="CENTER">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="47.0" layoutY="134.0" text="ID" />
+		<Label alignment="CENTER" layoutX="47.0" layoutY="176.0" text="PW" />
+		<TextField fx:id="txtUserId" alignment="CENTER" layoutX="82.0" layoutY="129.0" promptText="ID를 입력하세요" />
+		<Button fx:id="btnUserStart" layoutX="118.0" layoutY="220.0" mnemonicParsing="false" text="사용 시작" />
+		<Button fx:id="btnIdPwSearch" layoutX="31.0" layoutY="267.0" mnemonicParsing="false" text="ID/PW 찾기" />
+		<Button fx:id="btnSignIn" layoutX="143.0" layoutY="267.0" mnemonicParsing="false" text="회원가입" />
+		<Button fx:id="btnExit" layoutX="236.0" layoutY="267.0" mnemonicParsing="false" text="종료" />
+		<PasswordField fx:id="txtUserPw" alignment="CENTER" layoutX="83.0" layoutY="171.0" promptText="PW를 입력하세요" />
+      <ComboBox fx:id="cbxSeatNo" layoutX="86.0" layoutY="80.0" prefWidth="150.0" promptText="좌석번호선택" />
+	</children>
+</AnchorPane>

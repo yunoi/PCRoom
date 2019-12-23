@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="23.0" layoutY="44.0" text="PC 번호" />
+      <Label fx:id="lbSeatNo" layoutX="106.0" layoutY="26.0" text="No.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="90.0" text="시설종류" />
+      <Label fx:id="lbUserId" layoutX="134.0" layoutY="90.0" text="모델명" />
+      <Label layoutX="23.0" layoutY="128.0" text="모니터" />
+      <Label fx:id="lbMonitorMo" layoutX="143.0" layoutY="128.0" text="xxx" />
+      <Label layoutX="31.0" layoutY="163.0" text="본체" />
+      <Label fx:id="lbKeyboardMo" layoutX="146.0" layoutY="198.0" text="xxx" />
+      <Label layoutX="21.0" layoutY="198.0" text="키보드" />
+      <Label layoutX="21.0" layoutY="235.0" text="마우스" />
+      <Label fx:id="lbMouseMo" layoutX="146.0" layoutY="235.0" text="xxx" />
+      <Label fx:id="lbSpeakerMo" layoutX="143.0" layoutY="270.0" text="xxx" />
+      <Label layoutX="21.0" layoutY="305.0" text="헤드셋" />
+      <Label fx:id="lbPaidMoney" layoutX="16.0" layoutY="363.0" text="작동여부" />
+      <Button fx:id="btnOk" layoutX="91.0" layoutY="407.0" mnemonicParsing="false" text="확인" />
+      <Label layoutX="21.0" layoutY="270.0" text="스피커" />
+      <Label fx:id="lbHeadsetMo" layoutX="143.0" layoutY="305.0" text="xxx" />
+      <Separator layoutX="25.0" layoutY="118.0" prefWidth="200.0" />
+      <Separator layoutX="25.0" layoutY="340.0" prefWidth="200.0" />
+      <Label fx:id="lbComMo" layoutX="143.0" layoutY="163.0" text="xxx" />
+      <RadioButton fx:id="rbBroken" layoutX="168.0" layoutY="363.0" mnemonicParsing="false" text="수리중">
+         <toggleGroup>
+            <ToggleGroup fx:id="workableGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbWork" layoutX="90.0" layoutY="363.0" mnemonicParsing="false" selected="true" text="정상" toggleGroup="$workableGroup" />
+   </children>
+</AnchorPane>

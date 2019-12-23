@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="250.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="93.0" layoutY="21.0" text="장비 등록" />
+      <Label layoutX="20.0" layoutY="69.0" text="설비번호" />
+      <TextField fx:id="txtEquipNo" layoutX="95.0" layoutY="64.0" prefHeight="29.0" prefWidth="127.0" />
+      <TextField fx:id="txtEquipType" layoutX="95.0" layoutY="102.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="107.0" text="설비분류" />
+      <Label layoutX="20.0" layoutY="147.0" text="모델명" />
+      <TextField fx:id="txtEquipName" layoutX="95.0" layoutY="142.0" prefHeight="29.0" prefWidth="127.0" />
+      <TextField fx:id="txtASInfo" layoutX="95.0" layoutY="181.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="186.0" text="A/S정보" />
+      <Label layoutX="20.0" layoutY="226.0" text="상태/위치" />
+      <ComboBox fx:id="cbxStatus" layoutX="95.0" layoutY="221.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="20.0" layoutY="266.0" text="좌석번호" />
+      <TextField fx:id="txtSeatNo" layoutX="95.0" layoutY="261.0" prefHeight="29.0" prefWidth="127.0" />
+      <Button fx:id="btnOk" layoutX="56.0" layoutY="321.0" mnemonicParsing="false" text="등록" />
+      <Button fx:id="btnExit" layoutX="124.0" layoutY="321.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>

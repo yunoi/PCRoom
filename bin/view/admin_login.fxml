@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Label layoutX="103.0" layoutY="98.0" text="관리자 로그인" />
+      <Label layoutX="32.0" layoutY="29.0" text="외유내강 PC방">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="151.0" text="ID" />
+      <Label layoutX="41.0" layoutY="195.0" text="PW" />
+      <TextField fx:id="txtAdminId" layoutX="83.0" layoutY="146.0" />
+      <Button fx:id="btnAdminStart" layoutX="44.0" layoutY="240.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="213.0" text="Login" />
+      <PasswordField fx:id="txtAdminPw" layoutX="83.0" layoutY="190.0" />
+   </children>
+</AnchorPane>

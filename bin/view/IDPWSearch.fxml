@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IDPWSearchController">
+   <children>
+      <Label layoutX="23.0" layoutY="17.0" text="ID 찾기">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="145.0" text="PW 찾기">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnIdFind" layoutX="265.0" layoutY="88.0" mnemonicParsing="false" text="ID찾기" />
+      <Button fx:id="btnPwFind" layoutX="265.0" layoutY="254.0" mnemonicParsing="false" text="PW찾기" />
+      <TextField fx:id="txtIdEmail" layoutX="32.0" layoutY="88.0" prefWidth="217.0" promptText="이메일을 입력하시오" />
+      <TextField fx:id="txtIdName" layoutX="32.0" layoutY="51.0" prefHeight="29.0" prefWidth="217.0" promptText="이름을 입력하시오" />
+      <TextField fx:id="txtPwName" layoutX="32.0" layoutY="181.0" prefWidth="217.0" promptText="이름을 입력하시오" />
+      <TextField fx:id="txtPwId" layoutX="32.0" layoutY="219.0" prefWidth="217.0" promptText="아이디를 입력하시오" />
+      <TextField fx:id="txtPwEmail" layoutX="32.0" layoutY="254.0" prefWidth="217.0" promptText="이메일을 입력하시오" />
+      <Separator layoutX="14.0" layoutY="136.0" prefHeight="0.0" prefWidth="322.0" />
+   </children>
+</AnchorPane>

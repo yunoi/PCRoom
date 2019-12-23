@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="599.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <TableView fx:id="tableViewUserDB" layoutX="13.0" layoutY="45.0" prefHeight="416.0" prefWidth="958.0" />
+      <Label layoutX="20.0" layoutY="14.0" text="전체회원조회" />
+      <Button fx:id="btnCharge" layoutX="404.0" layoutY="529.0" mnemonicParsing="false" text="요금충전" />
+      <Button fx:id="btnUserDelete" layoutX="536.0" layoutY="529.0" mnemonicParsing="false" text="회원삭제" />
+      <Button fx:id="btnUserSearch" layoutX="884.0" layoutY="488.0" mnemonicParsing="false" text="회원검색" />
+      <TextField fx:id="txtUserSearch" layoutX="695.0" layoutY="488.0" promptText="회원이름검색" />
+   </children>
+</AnchorPane>

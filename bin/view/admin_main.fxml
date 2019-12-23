@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRootController">
+   <children>
+      <Label layoutX="27.0" layoutY="29.0" text="현재시간" />
+      <Label fx:id="lbCurrentTime" layoutX="27.0" layoutY="60.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="101.0" text="근무자: " />
+      <Label fx:id="lbCurrentWorkerName" layoutX="87.0" layoutY="101.0" text="Label" />
+      <Button fx:id="btnAdminLogout" layoutX="158.0" layoutY="96.0" mnemonicParsing="false" text="Logout" />
+      <AnchorPane layoutX="20.0" layoutY="150.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Rectangle fx:id="recSeat01" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="26.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo01" layoutX="32.0" layoutY="16.0" text="01">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo01" layoutX="78.0" layoutY="67.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting01" fitHeight="55.0" fitWidth="20.0" layoutX="171.0" layoutY="18.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat02" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="216.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting02" fitHeight="55.0" fitWidth="20.0" layoutX="361.0" layoutY="18.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo02" layoutX="268.0" layoutY="67.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo02" layoutX="220.0" layoutY="16.0" text="02">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat03" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="406.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo03" layoutX="410.0" layoutY="16.0" text="03">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo03" layoutX="458.0" layoutY="67.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting03" fitHeight="55.0" fitWidth="20.0" layoutX="551.0" layoutY="18.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat04" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="596.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting04" fitHeight="55.0" fitWidth="20.0" layoutX="741.0" layoutY="19.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo04" layoutX="648.0" layoutY="68.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo04" layoutX="600.0" layoutY="16.0" text="04">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat05" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="786.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo05" layoutX="790.0" layoutY="16.0" text="05">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo05" layoutX="838.0" layoutY="68.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting05" fitHeight="55.0" fitWidth="20.0" layoutX="931.0" layoutY="19.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat10" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="786.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting10" fitHeight="55.0" fitWidth="20.0" layoutX="931.0" layoutY="159.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo10" layoutX="838.0" layoutY="208.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo10" layoutX="790.0" layoutY="157.0" text="10">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat09" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="596.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo09" layoutX="600.0" layoutY="157.0" text="09">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo09" layoutX="648.0" layoutY="208.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting09" fitHeight="55.0" fitWidth="20.0" layoutX="741.0" layoutY="159.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat08" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="406.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting08" fitHeight="55.0" fitWidth="20.0" layoutX="551.0" layoutY="158.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo08" layoutX="458.0" layoutY="207.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo08" layoutX="410.0" layoutY="157.0" text="08">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat07" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="216.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo07" layoutX="220.0" layoutY="157.0" text="07">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo07" layoutX="268.0" layoutY="207.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting07" fitHeight="55.0" fitWidth="20.0" layoutX="361.0" layoutY="158.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat06" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="26.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting06" fitHeight="55.0" fitWidth="20.0" layoutX="171.0" layoutY="158.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo06" layoutX="78.0" layoutY="207.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo06" layoutX="30.0" layoutY="157.0" text="06">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat11" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="26.0" layoutY="294.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo11" layoutX="30.0" layoutY="297.0" text="11">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo11" layoutX="78.0" layoutY="347.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting11" fitHeight="55.0" fitWidth="20.0" layoutX="171.0" layoutY="298.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat12" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="216.0" layoutY="294.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting12" fitHeight="55.0" fitWidth="20.0" layoutX="361.0" layoutY="298.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo12" layoutX="268.0" layoutY="347.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo12" layoutX="220.0" layoutY="297.0" text="12">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat13" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="406.0" layoutY="294.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo13" layoutX="410.0" layoutY="297.0" text="13">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo13" layoutX="458.0" layoutY="347.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting13" fitHeight="55.0" fitWidth="20.0" layoutX="551.0" layoutY="298.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat14" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="596.0" layoutY="295.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting14" fitHeight="55.0" fitWidth="20.0" layoutX="741.0" layoutY="299.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo14" layoutX="648.0" layoutY="348.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo14" layoutX="600.0" layoutY="297.0" text="14">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat15" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="786.0" layoutY="295.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo15" layoutX="790.0" layoutY="297.0" text="15">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo15" layoutX="838.0" layoutY="348.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting15" fitHeight="55.0" fitWidth="20.0" layoutX="931.0" layoutY="299.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat20" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="786.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting20" fitHeight="55.0" fitWidth="20.0" layoutX="931.0" layoutY="439.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo20" layoutX="838.0" layoutY="488.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo20" layoutX="790.0" layoutY="437.0" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat19" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="596.0" layoutY="435.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo19" layoutX="600.0" layoutY="437.0" text="19">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo19" layoutX="648.0" layoutY="488.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting19" fitHeight="55.0" fitWidth="20.0" layoutX="741.0" layoutY="439.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat18" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="406.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting18" fitHeight="55.0" fitWidth="20.0" layoutX="551.0" layoutY="438.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo18" layoutX="458.0" layoutY="487.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo18" layoutX="410.0" layoutY="436.0" text="18">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="recSeat17" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="216.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <Label fx:id="seatNo17" layoutX="220.0" layoutY="435.0" text="17">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSeatInfo17" layoutX="268.0" layoutY="487.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgSeatSetting17" fitHeight="55.0" fitWidth="20.0" layoutX="361.0" layoutY="438.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="recSeat16" arcHeight="5.0" arcWidth="5.0" fill="#c6c6c6" height="126.0" layoutX="26.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" />
+            <ImageView fx:id="imgSeatSetting16" fitHeight="55.0" fitWidth="20.0" layoutX="171.0" layoutY="438.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/settings.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbSeatInfo16" layoutX="78.0" layoutY="487.0" text="빈 좌 석">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="seatNo16" layoutX="30.0" layoutY="436.0" text="16">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="110.0" text="남은시간" />
+            <Label fx:id="lbRemainTime01" layoutX="112.0" layoutY="110.0" text="00:00:00" />
+            <Label layoutX="226.0" layoutY="110.0" text="남은시간" />
+            <Label fx:id="lbRemainTime02" layoutX="301.0" layoutY="110.0" text="00:00:00" />
+            <Label fx:id="lbRemainTime03" layoutX="494.0" layoutY="110.0" text="00:00:00" />
+            <Label layoutX="421.0" layoutY="110.0" text="남은시간" />
+            <Label fx:id="lbRemainTime04" layoutX="684.0" layoutY="110.0" text="00:00:00" />
+            <Label layoutX="609.0" layoutY="110.0" text="남은시간" />
+            <Label fx:id="lbRemainTime05" layoutX="871.0" layoutY="110.0" text="00:00:00" />
+            <Label layoutX="799.0" layoutY="110.0" text="남은시간" />
+            <Label fx:id="lbRemainTime07" layoutX="303.0" layoutY="250.0" text="00:00:00" />
+            <Label layoutX="233.0" layoutY="250.0" text="남은시간" />
+            <Label fx:id="lbRemainTime12" layoutX="301.0" layoutY="394.0" text="00:00:00" />
+            <Label layoutX="229.0" layoutY="394.0" text="남은시간" />
+            <Label fx:id="lbRemainTime17" layoutX="301.0" layoutY="527.0" text="00:00:00" />
+            <Label layoutX="229.0" layoutY="527.0" text="남은시간" />
+            <Label fx:id="lbRemainTime06" layoutX="112.0" layoutY="250.0" text="00:00:00" />
+            <Label layoutX="39.0" layoutY="250.0" text="남은시간" />
+            <Label layoutX="39.0" layoutY="394.0" text="남은시간" />
+            <Label fx:id="lbRemainTime11" layoutX="112.0" layoutY="394.0" text="00:00:00" />
+            <Label layoutX="39.0" layoutY="527.0" text="남은시간" />
+            <Label fx:id="lbRemainTime16" layoutX="112.0" layoutY="527.0" text="00:00:00" />
+            <Label layoutX="421.0" layoutY="250.0" text="남은시간" />
+            <Label fx:id="lbRemainTime08" layoutX="494.0" layoutY="250.0" text="00:00:00" />
+            <Label layoutX="609.0" layoutY="250.0" text="남은시간" />
+            <Label fx:id="lbRemainTime09" layoutX="684.0" layoutY="250.0" text="00:00:00" />
+            <Label layoutX="799.0" layoutY="250.0" text="남은시간" />
+            <Label fx:id="lbRemainTime10" layoutX="871.0" layoutY="250.0" text="00:00:00" />
+            <Label fx:id="lbRemainTime15" layoutX="871.0" layoutY="394.0" text="00:00:00" />
+            <Label layoutX="799.0" layoutY="394.0" text="남은시간" />
+            <Label fx:id="lbRemainTime20" layoutX="871.0" layoutY="527.0" text="00:00:00" />
+            <Label layoutX="799.0" layoutY="527.0" text="남은시간" />
+            <Label fx:id="lbRemainTime13" layoutX="494.0" layoutY="394.0" text="00:00:00" />
+            <Label layoutX="421.0" layoutY="394.0" text="남은시간" />
+            <Label fx:id="lbRemainTime14" layoutX="684.0" layoutY="394.0" text="00:00:00" />
+            <Label layoutX="609.0" layoutY="394.0" text="남은시간" />
+            <Label fx:id="lbRemainTime18" layoutX="494.0" layoutY="527.0" text="00:00:00" />
+            <Label layoutX="421.0" layoutY="527.0" text="남은시간" />
+            <Label fx:id="lbRemainTime19" layoutX="684.0" layoutY="527.0" text="00:00:00" />
+            <Label layoutX="609.0" layoutY="527.0" text="남은시간" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </AnchorPane>
+      <Button fx:id="btnAdminMenu" layoutX="673.0" layoutY="87.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" text="관리자 메뉴" />
+      <Button fx:id="btnOrderCheck" layoutX="347.0" layoutY="87.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" text="주문확인" />
+      <Button fx:id="btnUserInfo" layoutX="512.0" layoutY="87.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" text="회원관리" />
+      <Button fx:id="btnIncome" layoutX="836.0" layoutY="87.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" text="매출보기" />
+   </children>
+</AnchorPane>

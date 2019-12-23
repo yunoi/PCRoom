@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="246.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserMainController">
+   <children>
+      <Button fx:id="btnOrder" layoutX="252.0" layoutY="98.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="상품주문" />
+      <Button fx:id="btnUserLogout" layoutX="252.0" layoutY="183.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="234.0" text="사용종료" />
+      <Button fx:id="btnSeatChange" layoutX="252.0" layoutY="142.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="자리이동" />
+      <Button fx:id="btnDetailCharge" layoutX="375.0" layoutY="98.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="상세요금" />
+      <Label layoutX="20.0" layoutY="48.0" text="자리번호 No." />
+      <Label layoutX="35.0" layoutY="182.0" text="선불요금" />
+      <Label layoutX="35.0" layoutY="138.0" text="남은시간" />
+      <Label fx:id="lbSeatNo" layoutX="154.0" layoutY="48.0" text="Label" />
+      <Label fx:id="lbAvailableTime" layoutX="154.0" layoutY="138.0" text="Label" />
+      <Label fx:id="lbPrepaidMoney" layoutX="154.0" layoutY="182.0" text="Label" />
+      <Button fx:id="btnInfo" layoutX="375.0" layoutY="142.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="110.0" text="회원정보수정" />
+      <Label fx:id="onUserName" layoutX="307.0" layoutY="48.0" text="Label" />
+      <Label layoutX="362.0" layoutY="48.0" text="님 반갑습니다." />
+   </children>
+</AnchorPane>
