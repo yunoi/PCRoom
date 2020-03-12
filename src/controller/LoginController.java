@@ -51,8 +51,7 @@ public class LoginController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		cbxSeatNo.setItems(FXCollections.observableArrayList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-				"12", "13", "14", "15", "16", "17", "18", "19", "20"));
+		cbxSeatNo.setItems(FXCollections.observableArrayList("1", "2", "3", "4"));
 		btnUserStart.setOnAction(event -> handlerBtnLoginAction(event));
 		btnExit.setOnAction(event -> handlerBtnCancelAction(event));
 		btnIdPwSearch.setOnAction(event -> handlerBtnIdPwSearchAction(event));

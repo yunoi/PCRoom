@@ -45,38 +45,7 @@ public class AdminRootController implements Initializable {
 	private Label seatNo03;
 	@FXML
 	private Label seatNo04;
-	@FXML
-	private Label seatNo05;
-	@FXML
-	private Label seatNo06;
-	@FXML
-	private Label seatNo07;
-	@FXML
-	private Label seatNo08;
-	@FXML
-	private Label seatNo09;
-	@FXML
-	private Label seatNo10;
-	@FXML
-	private Label seatNo11;
-	@FXML
-	private Label seatNo12;
-	@FXML
-	private Label seatNo13;
-	@FXML
-	private Label seatNo14;
-	@FXML
-	private Label seatNo15;
-	@FXML
-	private Label seatNo16;
-	@FXML
-	private Label seatNo17;
-	@FXML
-	private Label seatNo18;
-	@FXML
-	private Label seatNo19;
-	@FXML
-	private Label seatNo20;
+	
 	@FXML
 	private Label lbSeatInfo01;
 	@FXML
@@ -85,38 +54,7 @@ public class AdminRootController implements Initializable {
 	private Label lbSeatInfo03;
 	@FXML
 	private Label lbSeatInfo04;
-	@FXML
-	private Label lbSeatInfo05;
-	@FXML
-	private Label lbSeatInfo06;
-	@FXML
-	private Label lbSeatInfo07;
-	@FXML
-	private Label lbSeatInfo08;
-	@FXML
-	private Label lbSeatInfo09;
-	@FXML
-	private Label lbSeatInfo10;
-	@FXML
-	private Label lbSeatInfo11;
-	@FXML
-	private Label lbSeatInfo12;
-	@FXML
-	private Label lbSeatInfo13;
-	@FXML
-	private Label lbSeatInfo14;
-	@FXML
-	private Label lbSeatInfo15;
-	@FXML
-	private Label lbSeatInfo16;
-	@FXML
-	private Label lbSeatInfo17;
-	@FXML
-	private Label lbSeatInfo18;
-	@FXML
-	private Label lbSeatInfo19;
-	@FXML
-	private Label lbSeatInfo20;
+	
 	@FXML
 	private Label lbRemainTime01;
 	@FXML
@@ -125,38 +63,7 @@ public class AdminRootController implements Initializable {
 	private Label lbRemainTime03;
 	@FXML
 	private Label lbRemainTime04;
-	@FXML
-	private Label lbRemainTime05;
-	@FXML
-	private Label lbRemainTime06;
-	@FXML
-	private Label lbRemainTime07;
-	@FXML
-	private Label lbRemainTime08;
-	@FXML
-	private Label lbRemainTime09;
-	@FXML
-	private Label lbRemainTime10;
-	@FXML
-	private Label lbRemainTime11;
-	@FXML
-	private Label lbRemainTime12;
-	@FXML
-	private Label lbRemainTime13;
-	@FXML
-	private Label lbRemainTime14;
-	@FXML
-	private Label lbRemainTime15;
-	@FXML
-	private Label lbRemainTime16;
-	@FXML
-	private Label lbRemainTime17;
-	@FXML
-	private Label lbRemainTime18;
-	@FXML
-	private Label lbRemainTime19;
-	@FXML
-	private Label lbRemainTime20;
+	
 	@FXML
 	private ImageView imgSeatSetting01;
 	@FXML
@@ -165,38 +72,7 @@ public class AdminRootController implements Initializable {
 	private ImageView imgSeatSetting03;
 	@FXML
 	private ImageView imgSeatSetting04;
-	@FXML
-	private ImageView imgSeatSetting05;
-	@FXML
-	private ImageView imgSeatSetting06;
-	@FXML
-	private ImageView imgSeatSetting07;
-	@FXML
-	private ImageView imgSeatSetting08;
-	@FXML
-	private ImageView imgSeatSetting09;
-	@FXML
-	private ImageView imgSeatSetting10;
-	@FXML
-	private ImageView imgSeatSetting11;
-	@FXML
-	private ImageView imgSeatSetting12;
-	@FXML
-	private ImageView imgSeatSetting13;
-	@FXML
-	private ImageView imgSeatSetting14;
-	@FXML
-	private ImageView imgSeatSetting15;
-	@FXML
-	private ImageView imgSeatSetting16;
-	@FXML
-	private ImageView imgSeatSetting17;
-	@FXML
-	private ImageView imgSeatSetting18;
-	@FXML
-	private ImageView imgSeatSetting19;
-	@FXML
-	private ImageView imgSeatSetting20;
+	
 	@FXML
 	private Rectangle recSeat01;
 	@FXML
@@ -205,38 +81,7 @@ public class AdminRootController implements Initializable {
 	private Rectangle recSeat03;
 	@FXML
 	private Rectangle recSeat04;
-	@FXML
-	private Rectangle recSeat05;
-	@FXML
-	private Rectangle recSeat06;
-	@FXML
-	private Rectangle recSeat07;
-	@FXML
-	private Rectangle recSeat08;
-	@FXML
-	private Rectangle recSeat09;
-	@FXML
-	private Rectangle recSeat10;
-	@FXML
-	private Rectangle recSeat11;
-	@FXML
-	private Rectangle recSeat12;
-	@FXML
-	private Rectangle recSeat13;
-	@FXML
-	private Rectangle recSeat14;
-	@FXML
-	private Rectangle recSeat15;
-	@FXML
-	private Rectangle recSeat16;
-	@FXML
-	private Rectangle recSeat17;
-	@FXML
-	private Rectangle recSeat18;
-	@FXML
-	private Rectangle recSeat19;
-	@FXML
-	private Rectangle recSeat20;
+	
 	@FXML
 	private Button btnAdminLogout;
 	@FXML
@@ -469,6 +314,52 @@ public class AdminRootController implements Initializable {
 		
 												} // while
 											} // if
+											else if (seatNo == 3) {
+												while (startTime) {
+													for (i = countdownSeconds; i >= 0; i--) {
+														try {
+															Thread.sleep(1000);
+														} catch (InterruptedException e) {
+															e.printStackTrace();
+														}
+														Platform.runLater(() -> {
+															lbSeatInfo03.setText(name);
+															lbRemainTime03.setText(String.valueOf(
+																	i / 3600 + ":" + i % 3600 / 60 + ":" + i % 3600 % 60));
+														});
+														if(startTime == false) {
+															break;
+														}
+														//System.out.println("i="+i+" "+startTime);
+														///////db 불러서 시간 저장 하는 자리 /////////////
+														
+													} // for
+		
+												} // while
+											} // if
+											else if (seatNo == 4) {
+												while (startTime) {
+													for (i = countdownSeconds; i >= 0; i--) {
+														try {
+															Thread.sleep(1000);
+														} catch (InterruptedException e) {
+															e.printStackTrace();
+														}
+														Platform.runLater(() -> {
+															lbSeatInfo04.setText(name);
+															lbRemainTime04.setText(String.valueOf(
+																	i / 3600 + ":" + i % 3600 / 60 + ":" + i % 3600 % 60));
+														});
+														if(startTime == false) {
+															break;
+														}
+														//System.out.println("i="+i+" "+startTime);
+														///////db 불러서 시간 저장 하는 자리 /////////////
+														
+													} // for
+		
+												} // while
+											} // if
 		
 										} // else
 									}// run()
@@ -498,7 +389,21 @@ public class AdminRootController implements Initializable {
 										lbRemainTime02.setText("00:00:00");
 
 									});
+								} else if (seatNo == 3) {
+									Platform.runLater(() -> {// 6
+										lbSeatInfo03.setText("빈 좌 석");
+										lbRemainTime03.setText("00:00:00");
+
+									});
+								} else if (seatNo == 4) {
+									Platform.runLater(() -> {// 6
+										lbSeatInfo04.setText("빈 좌 석");
+										lbRemainTime04.setText("00:00:00");
+
+									});
 								}
+
+
 		//						System.out.println("소켓끊김?"+socket.isClosed());
 								socket.close();
 								for( Player player : list) {
@@ -619,265 +524,5 @@ public class AdminRootController implements Initializable {
 		}
 		
 	}
-	
-//	public void handlerViewUserInfoAction(MouseEvent event) {
-//	try {
-//		if (event.getClickCount() != 2) {
-//			return;
-//		}
-//		Parent userInfo;
-//		userInfo = FXMLLoader.load(getClass().getResource("/view/user_info.fxml"));
-//
-//		Stage stageDialog = new Stage(StageStyle.UTILITY);
-//		stageDialog.initModality(Modality.WINDOW_MODAL);
-//		stageDialog.initOwner(recSeat01.getScene().getWindow());
-//		stageDialog.setTitle("현재 이용자 정보");
-//
-//		// -------------------------------------------
-//		Label lbSeatNo = (Label) userInfo.lookup("#lbSeatNo");
-//		Label lbUserId = (Label) userInfo.lookup("#lbUserId");
-//		Label lbUserName = (Label) userInfo.lookup("#lbUserName");
-//		Label lbPrepaidMoney = (Label) userInfo.lookup("#lbPrepaidMoney");
-//		Label lbStartTime = (Label) userInfo.lookup("#lbStartTime");
-//		Label lbUsedTime = (Label) userInfo.lookup("#lbUsedTime");
-//		Label lbRemainTime = (Label) userInfo.lookup("#lbRemainTime");
-//		Label lbPaidMoney = (Label) userInfo.lookup("#lbPaidMoney");
-//		Button btnCharge = (Button) userInfo.lookup("#btnCharge");
-//		Button btnOk = (Button) userInfo.lookup("#btnOk");
 
-		// 사용자가 있을 때
-//		if (!lbSeatInfo01.getText().equals("빈 좌 석")) {
-//			ChargeDAO chargeDAO = new ChargeDAO();
-//			Vector<Object> vector = new Vector<Object>();
-//			userId = lbSeatInfo01.getText();
-//			vector = chargeDAO.selectLabelNameTime(userId);
-//			int prepaidMoney = (Integer) (vector.get(1));
-//
-//			// 남은 시간 표시
-//			if (prepaidMoney == 1000) {
-//				countdownSeconds = 3600;
-//			} else if (prepaidMoney == 2000) {
-//				countdownSeconds = 7200;
-//			}
-//			Thread t1 = new Thread() {
-//				@Override
-//				public void run() {
-//					try {
-//						while (logout) {
-//							// int countdownSeconds = hour * 3600 + minute * 60 + second;
-//							if (countdownSeconds == 0) {
-//								CommonFunc.alertDisplay(1, "오류", "X", "X");
-//							} else {
-//								if (userId == null) {
-//									CommonFunc.alertDisplay(1, "오류", "X", "X");
-//								} else {
-//									for (i = countdownSeconds; i >= 0; i--) {
-//
-//										Thread.sleep(1000);
-//
-//										Platform.runLater(() -> {
-//											lbRemainTime.setText(String
-//													.valueOf(i / 3600 + ":" + i % 3600 / 60 + ":" + i % 3600 % 60));
-//											lbPrepaidMoney.setText(prepaidMoney + "원");
-//										});
-//									}
-//								}
-//							}
-//						} // while
-//					} catch (InterruptedException e) {
-//						e.printStackTrace();
-//					}
-//				}
-//			};
-//			t1.start();
-//		}
-//		// 요금충전 버튼 눌렀을 때
-//		btnCharge.setOnAction(new EventHandler<ActionEvent>() {
-//
-//			@Override
-//			public void handle(ActionEvent event) {
-//				try {
-//					Parent charge;
-//					charge = FXMLLoader.load(getClass().getResource("/view/admin_charge.fxml"));
-//
-//					Stage stageDialog = new Stage(StageStyle.UTILITY);
-//					stageDialog.initModality(Modality.WINDOW_MODAL);
-//					stageDialog.initOwner(recSeat01.getScene().getWindow());
-//					stageDialog.setTitle("요금충전");
-//
-//					ComboBox cbxCharge = (ComboBox) charge.lookup("#cbxCharge");
-//					Button btnOk = (Button) charge.lookup("#btnOk");
-//					cbxCharge.setItems(FXCollections.observableArrayList("1시간 1,000원", "2시간 2,000원", "3시간 3,000원",
-//							"5시간 5,000원", "24시간(정액) 20,000원"));
-//
-//					btnOk.setOnAction(new EventHandler<ActionEvent>() {
-//
-//						@Override
-//						public void handle(ActionEvent event) {
-//							String charge = cbxCharge.getValue().toString();
-//							int idx = charge.indexOf(" ");
-//							String paidMoney = charge.substring(idx + 1);
-//
-////							Vector<Object> vector = new Vector<Object>();
-////							vector = chargeDAO.selectLabelNameTime(name);
-////							int prepaidMoney = (Integer) (vector.get(1));
-//
-//							SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss");
-//							Date time = new Date();
-//							String time1 = sdf.format(time);
-//
-//							// 사용한 시간 표시
-//							Thread thread = new Thread() {
-//								public void run() {
-//									Timeline timeline = null;
-//									t = LocalTime.parse("00:00:00");
-//									DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-//
-//									timeline = new Timeline(new KeyFrame(Duration.millis(1000), new EventHandler() {
-//										@Override
-//										public void handle(Event event) {
-//											t = t.plusSeconds(1);
-//											Platform.runLater(() -> {
-//												lbUsedTime.setText(t.format(dtf));
-//											});
-//										}
-//									}));
-//									timeline.setCycleCount(Animation.INDEFINITE);
-//									timeline.play();
-//								}
-//							};
-//							thread.setDaemon(true);
-//							thread.start();
-//
-//							// 남은 시간 표시
-//							if (paidMoney.equals("1,000원")) {
-//								countdownSeconds = 3600;
-//								prepaidMoney = 1000;
-//							} else if (paidMoney.equals("2,000원")) {
-//								countdownSeconds = 7200;
-//								prepaidMoney = 2000;
-//							}
-//							Thread thread1 = new Thread(new Runnable() {
-//
-//								@Override
-//								public void run() {
-//									// Calculate total seconds to count down
-////									int countdownSeconds = hour * 3600 + minute * 60 + second;
-//									// System.out.println((countdownSeconds / 3600) + ":" + countdownSeconds % 3600
-//									// / 60 + ":" + (countdownSeconds % 3600 % 60));
-//
-//									// Count down to 0 and print it on the console
-//									for (i = countdownSeconds; i >= 0; i--) {
-//										try {
-//											Thread.sleep(1000);
-//										} catch (InterruptedException e) {
-//										}
-//
-//										Platform.runLater(() -> {
-//											lbRemainTime.setText(String
-//													.valueOf(i / 3600 + ":" + i % 3600 / 60 + ":" + i % 3600 % 60));
-//											lbRemainTime01.setText(String
-//													.valueOf(i / 3600 + ":" + i % 3600 / 60 + ":" + i % 3600 % 60));
-//										});
-//									}
-//								}
-//							});
-//							// Start the Thread
-//							thread1.start();
-//
-//							lbStartTime.setText(time1);
-//							lbPrepaidMoney.setText(charge);
-//							lbPaidMoney.setText(paidMoney);
-//
-//							int hour = Integer.parseInt(lbRemainTime01.getText().split(":")[0]);
-//							int minute = Integer.parseInt(lbRemainTime01.getText().split(":")[1]);
-//							int second = Integer.parseInt(lbRemainTime01.getText().split(":")[2]);
-//							countdownSeconds = hour * 3600 + minute * 60 + second;
-//
-//							ChargeDAO chargeDAO = new ChargeDAO();
-//							ChargeVO cvo = new ChargeVO(prepaidMoney, countdownSeconds);
-//							chargeDAO.getChargeUpdate(cvo, enterNo);
-//
-//							stageDialog.close();
-//						}
-//					});
-//
-//					Scene scene = new Scene(charge);
-//					stageDialog.setScene(scene);
-//					stageDialog.setResizable(false);
-//					stageDialog.show();
-//				} catch (IOException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
-//			}
-//		});
-		// 확인버튼 눌렀을 때
-//		btnOk.setOnAction(e -> {
-//			stageDialog.close();
-//		});
-//
-//		Scene scene = new Scene(userInfo);
-//		stageDialog.setScene(scene);
-//		stageDialog.setResizable(false);
-//		stageDialog.show();
-//	} catch (IOException e1) {
-//		CommonFunc.alertDisplay(1, "파일 열기 오류", "현재 이용자 정보", "접근할 수 없습니다." + e1.toString());
-//	}
-//}
-	
-	// 좌석 상세 정보버튼
-//		public void handlerViewSeatInfo(MouseEvent event) {
-//			try {
-//				if (event.getClickCount() != 2) {
-//					return;
-//				}
-//				Parent seatInfo;
-//				seatInfo = FXMLLoader.load(getClass().getResource("/view/seat_info.fxml"));
-	//
-//				Stage stageDialog = new Stage(StageStyle.UTILITY);
-//				stageDialog.initModality(Modality.WINDOW_MODAL);
-//				stageDialog.initOwner(recSeat01.getScene().getWindow());
-//				stageDialog.setTitle("현재 좌석 상세 정보");
-	//
-//				// -------------------------------------------
-//				Label lbSeatNo = (Label) seatInfo.lookup("#lbSeatNo");
-//				Label lbMonitorMo = (Label) seatInfo.lookup("#lbMonitorMo");
-//				Label lbComMo = (Label) seatInfo.lookup("#lbComMo");
-//				Label lbKeyboardMo = (Label) seatInfo.lookup("#lbKeyboardMo");
-//				Label lbMouseMo = (Label) seatInfo.lookup("#lbMouseMo");
-//				Label lbSpeakerMo = (Label) seatInfo.lookup("#lbSpeakerMo");
-//				Label lbHeadsetMo = (Label) seatInfo.lookup("#lbHeadsetMo");
-//				RadioButton rbWork = (RadioButton) seatInfo.lookup("#rbWork");
-//				RadioButton rbBroken = (RadioButton) seatInfo.lookup("#rbBroken");
-//				Button btnOk = (Button) seatInfo.lookup("#btnOk");
-	//
-//				lbSeatNo.setText(LoginController.getCurrentSeatNo);
-//				rbWork.setDisable(true);
-//				rbBroken.setDisable(true);
-	//
-//				ArrayList<String> list = new ArrayList<String>();
-//				EquipDAO equipDAO = new EquipDAO();
-//				list = equipDAO.getEquipSeatInfo(LoginController.getCurrentSeatNo);
-//				lbMonitorMo.setText(list.get(3));
-//				lbComMo.setText(list.get(0));
-//				lbKeyboardMo.setText(list.get(2));
-//				lbMouseMo.setText(list.get(4));
-//				lbSpeakerMo.setText(list.get(5));
-//				lbHeadsetMo.setText(list.get(1));
-	//
-//				// 확인버튼 눌렀을 때
-//				btnOk.setOnAction(e -> {
-//					stageDialog.close();
-//				});
-	//
-//				Scene scene = new Scene(seatInfo);
-//				stageDialog.setScene(scene);
-//				stageDialog.setResizable(false);
-//				stageDialog.show();
-//			} catch (IOException e1) {
-//				CommonFunc.alertDisplay(1, "파일 열기 오류", "좌석 상세 정보", "접근할 수 없습니다." + e1.toString());
-//			}
-	//
-//		}
 }
