@@ -513,11 +513,12 @@ public class AdminRootController implements Initializable {
 			mainStage.setTitle("Login.");
 			mainStage.setScene(scene);
 			mainStage.setResizable(false);
+			mainStage.show();
+
 			// 현재스테이지(기존창)를 닫고 새로운 창을 연다.
+			((Stage) btnAdminLogout.getScene().getWindow()).close();
 			socket.close();
 			serverSocket.close();
-			((Stage) btnAdminLogout.getScene().getWindow()).close();
-			mainStage.show();
 			
 		} catch (IOException e) {
 			CommonFunc.alertDisplay(1, "로그아웃 실패", "로그아웃할 수 없습니다.", e.toString());
